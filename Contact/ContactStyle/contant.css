@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .headerBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+}
+.container .headerBar .logo a {
+  color: #FF7058;
+  font-weight: 700;
+  font-size: 18px;
+}
+.container .headerBar .navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.container .headerBar .navBar a {
+  color: #94959A;
+  position: relative;
+  transition: 0.5s;
+}
+.container .headerBar .navBar a span {
+  width: 0%;
+  height: 2px;
+  background-color: #FF7058;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transition: 0.5s;
+}
+.container .headerBar .navBar a:hover {
+  color: #FF7058;
+}
+.container .headerBar .navBar a:hover span {
+  width: 100%;
+}
+.container .headerBar .navBar .navBtn1 {
+  color: #120D26;
+  font-weight: 600;
+}
+.container .headerBar .navBar .navBtn2 {
+  background-color: #120D26;
+  font-weight: 600;
+  color: #fff;
+  padding: 7px 30px;
+  border-radius: 10px;
+  border: 1px solid #120D26;
+  transition: 0.5s;
+}
+.container .headerBar .navBar .navBtn2:hover {
+  background: transparent;
+  color: #120D26;
+}
+.container .contactSection {
+  padding: 100px;
+  background-color: rgba(255, 112, 88, 0.0509803922);
+}
+.container .contactSection .contactBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+}
+.container .contactSection .contactBar .contactImage {
+  width: 50%;
+}
+.container .contactSection .contactBar .contactElements {
+  width: 40%;
+}
+.container .contactSection .contactBar .contactElements h1 {
+  color: #120D26;
+  font-size: 40px;
+}
+.container .contactSection .contactBar .contactElements p {
+  color: #94959A;
+  margin-bottom: 40px;
+}
+.container .contactSection .contactBar .contactElements .inputBar {
+  margin-bottom: 20px;
+}
+.container .contactSection .contactBar .contactElements .inputBar label {
+  color: #94959A;
+}
+.container .contactSection .contactBar .contactElements .inputBar input, .container .contactSection .contactBar .contactElements .inputBar textarea {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgba(255, 112, 88, 0.0509803922);
+  border: none;
+  border-radius: 10px;
+}
+.container .contactSection .contactBar .contactElements .inputBar input::-moz-placeholder, .container .contactSection .contactBar .contactElements .inputBar textarea::-moz-placeholder {
+  color: #FF7058;
+}
+.container .contactSection .contactBar .contactElements .inputBar input::placeholder, .container .contactSection .contactBar .contactElements .inputBar textarea::placeholder {
+  color: #FF7058;
+}
+.container .contactSection .contactBar .contactElements button {
+  width: 100%;
+  padding: 15px;
+  background-color: #FF7058;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+.container .footerSection {
+  padding: 100px;
+}
+.container .footerSection .footerBar1 {
+  display: flex;
+  justify-content: space-between;
+}
+.container .footerSection .footerBar1 .footerLeft {
+  display: flex;
+}
+.container .footerSection .footerBar1 .footerLeft .footerBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .footerSection .footerBar1 .footerLeft .footerBox h3 {
+  margin-bottom: 10px;
+}
+.container .footerSection .footerBar1 .footerLeft .footerBox a {
+  color: #FF7058;
+}
+.container .footerSection .footerBar1 .footerLeft .footerBoxEl {
+  margin-left: 100px;
+}
+.container .footerSection .footerBar1 .footerRight {
+  position: relative;
+  width: 250px;
+}
+.container .footerSection .footerBar1 .footerRight select {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  background: linear-gradient(135deg, #f8f9fa, #eef1f5);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.container .footerSection .footerBar1 .footerRight select:hover {
+  border-color: #FF7058;
+}
+.container .footerSection .footerBar1 .footerRight select:focus {
+  outline: none;
+  border-color: #FF7058;
+  box-shadow: 0 0 0 3px #FF7058;
+}
+.container .footerSection .footerline {
+  width: 100%;
+  height: 1px;
+  background-color: #120D26;
+  margin: 40px 0;
+}
+.container .footerBar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .footerBar2 .footerSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container .footerBar2 .footerSocial a {
+  color: #120D26;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .container .headerBar {
+    padding: 15px 20px;
+  }
+  .container .headerBar .navBar {
+    gap: 30px;
+  }
+  .container .heroSection {
+    padding: 40px 20px;
+  }
+  .container .heroSection .heroTitles h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .container .heroSection .heroTitles .heroBtns .heroBtn1,
+  .container .heroSection .heroTitles .heroBtns .heroBtn2 {
+    font-size: 12px;
+  }
+  .container .contactSection {
+    padding: 20px;
+  }
+  .container .contactSection .contactBar .contactImage {
+    width: 40%;
+  }
+  .container .pricingSection .prTitles {
+    text-align: center;
+  }
+  .container .pricingSection .prCardBar {
+    padding: 20px;
+  }
+  .container .happySection .happyCards {
+    padding: 20px;
+  }
+  .container .digitalSection {
+    padding: 20px;
+  }
+  .container .footerSection {
+    padding: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .container .headerBar {
+    flex-direction: column;
+  }
+  .container .headerBar .logo a {
+    font-size: 10px;
+  }
+  .container .headerBar .navBar {
+    gap: 20px;
+  }
+  .container .headerBar .navBar a {
+    font-size: 10px;
+  }
+  .container .headerBar .navBar .navBtn2 {
+    padding: 10px;
+    background: none;
+    color: #120D26;
+    border: none;
+    padding: 0;
+  }
+  .container .heroSection {
+    flex-direction: column-reverse;
+  }
+  .container .heroSection .heroTitles {
+    width: 100%;
+  }
+  .container .heroSection .heroImages {
+    width: 100%;
+  }
+  .container .sposerSection .spText {
+    font-size: 12px;
+  }
+  .container .sposerSection .spCardBar {
+    padding: 20px;
+  }
+  .container .contactSection .contactBar {
+    flex-direction: column;
+  }
+  .container .contactSection .contactBar .contactImage {
+    width: 100%;
+  }
+  .container .contactSection .contactBar .contactElements {
+    width: 100%;
+  }
+  .container .pricingSection .prTitles {
+    padding: 20px;
+  }
+  .container .pricingSection .prTitles .prText1 {
+    font-size: 20px;
+  }
+  .container .pricingSection .prTitles .prText2 {
+    font-size: 12px;
+  }
+  .container .pricingSection .prCardBar {
+    flex-direction: column;
+  }
+  .container .pricingSection .prCardBar .prCard {
+    width: 100%;
+  }
+  .container .happySection .happyTitles h1 {
+    font-size: 20px;
+  }
+  .container .happySection .happyCards {
+    flex-direction: column;
+  }
+  .container .happySection .happyCards .happyCard {
+    width: 100%;
+  }
+  .container .digitalSection .digitalBar {
+    padding: 30px;
+  }
+  .container .digitalSection .digitalBar .diTitle {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .container .digitalSection .digitalBar .diText {
+    font-size: 12px;
+  }
+  .container .footerSection .footerBar1 .footerRight {
+    display: none;
+  }
+}/*# sourceMappingURL=contant.css.map */
